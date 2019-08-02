@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Calculator app</h2>
+
+<form action="/" method ="POST" id=jimmy>
+  Current Value:<br>
+  <input type="text" name="CurrentVal" readonly value = "<%=CurrentNum%>">
+  <br>
+  Input:<br>
+  <input type="number" name="InputVal"><br>
+  <input type="submit" value ="add" name="Add" >
+  <input type="submit" value ="subtract"name ="Subtract">
+  <input type="submit" value ="pop" name="Pop">
+  <input type="submit" value ="reset" name="reset">
+
+<br>
+History:<br>
+<textarea rows="5" cols="50" value= "history" name = "History" readonly>
+<%=History%>
+
+</textarea>
+<input type="hidden" value="<%=array%>" name="array">
+</form>
+</body>
+</html>
